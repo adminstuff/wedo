@@ -1,0 +1,12 @@
+curl --request POST \
+--url https://rss.wedo.swiss/api/admin/users/user \
+--header 'Authorization: Bearer API_TOKEN' \
+--header 'Content-Type: application/json' \
+--data '{
+"firstName": "FirstName",
+"lastName": "LastName",
+"email": "Email",
+"userType": "USER",
+"language": "fr-fr",
+"invite": false
+}'
